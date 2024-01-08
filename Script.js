@@ -1,26 +1,118 @@
 
-const myObject = {
-  city: "Madrid",
-  greet() {
-    console.log(`Greetings from ${this.city}`);
-  },
-};
+//Test
 
-myObject.greet(); // Greetings from Madrid
-
-// recursion is when a fucntion is called within itself
-const loop = ()=> {
-  if (n < 0) return;
-  console.log("hey")
-  loop(n - 1)
-};
-
-loop(9)
+fetch(
+"https://api.artic.edu/api/v1/artworks"
+    )
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (obj) {
+  
+        console.log(obj.data[0].artist_title);
+        console.log(obj);
+      })
+    
 
 
 
+// MET API
+
+// var req1 = "468379";
+// var req2 = "323912"
+// var req3 = "56766";
+
+// const reqs = [req1, req2, req3];
+
+// for (let i = 0; i < reqs.length; i++) {
+//   console.log(reqs[i]);
+//   fetch(
+//     "https://collectionapi.metmuseum.org/public/collection/v1/objects/" +
+//       reqs[i]
+//   )
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (obj) {
+
+//       console.log(obj);
+//       console.log(obj.objectID)
+//       console.log(obj.title)
+//       console.log(obj.title)
+ 
+
+// var name1 = obj.title;
+// document.querySelector(".section1").innerHTML = name1;
+
+// var name2 = obj.title;
+// document.querySelector(".section2").innerHTML = name2;
+
+// })
+// }
 
 
+
+
+
+
+
+
+
+
+
+
+// var fruits = ["mango", "bananna", "apple", "Tomato"]
+
+
+// for (var i=0; i<fruits.length; i++) {
+// console.log(fruits[i])
+
+
+// }
+
+
+
+// var exhibitArray = []
+
+
+// fetch("https://collectionapi.metmuseum.org/public/collection/v1/objects")
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (obj) {
+//     console.log(obj);
+//   })
+
+
+// function countDownRecursive(n) {
+//   if (n <= 0) {
+//     console.log('Hooray')
+//     return
+//   }
+//   console.log(n)
+//   countDownRecursive(n-1)
+// }
+
+
+
+
+// const myObject = {
+//   city: "Madrid",
+//   greet() {
+//     console.log(`Greetings from ${this.city}`);
+//   },
+// };
+
+// myObject.greet(); // Greetings from Madrid
+
+// // recursion is when a fucntion is called within itself
+// const loop = ()=> {
+//   if (n < 0) return;
+//   console.log("hey")
+//   loop(n - 1)
+// };
+
+// loop(9)
 
 
 
@@ -37,12 +129,7 @@ loop(9)
 
 // console.log("the total is: " + total)
 
-// var fruits = ["mango", "bananna", "apple", "Tomato"]
 
-
-// for (var i=0; i<fruits.length; i++) {
-// console.log(fruits[i])
-// }
 
 // var data = {
 //   name: "John",
@@ -175,4 +262,4 @@ loop(9)
 // var colors = ["red", "blue", "green"]
 
 // button.addEventListener("click",newVariable)
-
+  

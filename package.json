@@ -1,0 +1,23 @@
+{
+  "name": "aaron-javascript-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asantowasso/Aaron-JavaScript-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asantowasso/Aaron-JavaScript-Practice/issues"
+  },
+  "homepage": "https://github.com/Asantowasso/Aaron-JavaScript-Practice#readme",
+  "devDependencies": {
+    "jest": "^29.2.1"
+  }
+}
